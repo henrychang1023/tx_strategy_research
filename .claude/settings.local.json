@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv future_historic_data/*.csv data/raw/taifex/)",
+      "Bash(mv \"TAIEX_historic_data\"/*.csv data/raw/twse/)",
+      "Bash(mv date/expiry.csv data/raw/expiry/)",
+      "Bash(rmdir future_historic_data TAIEX_historic_data date)",
+      "Bash(gofmt -l .)",
+      "Bash(go build *)",
+      "Bash(go test *)",
+      "Bash(go vet *)",
+      "Bash(go run *)"
+    ]
+  }
+}
